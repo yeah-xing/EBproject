@@ -1,0 +1,458 @@
+.container {
+	width: 1226px;
+	margin: 0 auto;
+}
+//公共头部样式
+header {
+	width: 100%;
+	height: 40px;
+	background: #333;
+	color: #b0b0b0;
+	font-size: 12px;
+	a {
+		color: #b0b0b0;
+	}
+	.container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		line-height: 40px;
+		.heaLeft {
+			ul {
+				li {
+					float: left;
+				}
+				span {
+					float: left;
+					padding: 0 1px;
+					color: #3c423c;
+					font-size: 14px;
+				}
+				li:hover {
+					color: #fff;
+					cursor: pointer;
+				}
+				.liQrc {
+					position: relative;
+					.QRC {
+						position: absolute;
+						width: 124px;
+						height: 148px;
+						box-sizing: border-box;
+						padding: 17px;
+						top: 40px;
+						left: -40px;
+						background: #fff;
+						box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+						font-size: 14px;
+						text-align: center;
+						display: none;
+						z-index: 99;
+						.img {
+							width: 90px;
+							height: 90px;
+						}
+					}
+				}
+				.liQrc:hover .app {
+					color: #333;
+				}
+			}
+		}
+		.heaRight {
+			ul {
+				float: right;
+				li {
+					float: left;
+				}
+				span {
+					float: left;
+					color: #3c423c;
+					font-size: 14px;
+				}
+				li:hover {
+					color: #fff;
+					cursor: pointer;
+				}
+				a:hover {
+					color: #fff;
+				}
+			}
+			.shop {
+				width: 120px;
+				height: 40px;
+				background: #424242 url(../images/shop_03.jpg) no-repeat 15px
+					center;
+				margin-left: 25px;
+				text-align: center;
+				position: relative;
+				.shop-h {
+					width: 316px;
+					font-size: 12px;
+					color: #424242;
+					text-align: center;
+					position: absolute;
+					background: #fff;
+					z-index: 99;
+					right: 0;
+					top: 40px;
+					display: none;
+					box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+					ul {
+						padding-top: 20px;
+						li {
+							width: 276px;
+							height: 60px;
+							padding: 10px 20px;
+							border-bottom: 1px solid #c0c0c0 ;
+							&:last-child {
+								border: none;
+							}
+							span {
+								color: #b0b0b0;
+								line-height: 40px;
+								display: inline-block;
+								font-size: 12px;
+							}
+							.thumb {
+								img {
+									width: 60px;
+								}
+								margin-right: 10px;
+							}
+							.goname {
+								width: 95px;
+								height: 40px;
+								line-height: 20px;
+								margin: 10px 0;
+								color: #424242;
+								overflow: hidden;
+							}
+							.goprice {
+								float: right;
+								margin: 10px 20px 10px 5px;
+							}
+						}
+					}
+					.jiesuan {
+						padding: 15px 20px;
+						width: 276px;
+						height: 43px;
+						background-color: #fafafa;
+						.gongsanjian {
+							float: left;
+							width: 135px;
+							color: #757575;
+							line-height: 1;
+							text-align: left;
+							i {
+								display: block;
+								color: #ff6700;
+								line-height: 1;
+								margin-top: 5px;
+								em {
+									font-size: 24px;
+									line-height: 1;
+								}
+							}
+						}
+						.lalala {
+							float: right;
+							width: 130px;
+							padding: 0;
+							font-size: 14px;
+							line-height: 40px;
+							text-align: center;
+							color: #f5f5f5;
+							background-color: #ff6700;
+						}
+					}
+				}
+			}
+			.shop:hover {
+				background: #fff url(../images/shop_2.jpg) no-repeat 15px center;
+				color: #ff6700;
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+//公共导航栏样式
+nav {
+	height: 99px;
+    position: relative;
+	a {
+		display: block;
+	}
+	.navMenuOne {
+		width: 100%;
+		height: 230px;
+		margin: 0 auto;
+		left: 0;
+		top: 98px;
+		position: absolute;
+		background: #fff;
+		overflow: hidden;
+		z-index: 50;
+        display: none;
+        border-top: 1px solid #e0e0e0;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.18);
+        transition: box-shadow .2s;
+		a {
+			display: block;
+		}
+		ul {
+			display: flex;
+			li {
+				position: relative;
+				flex: 1;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				padding: 35px 12px 0;
+				cursor: pointer;
+				div {
+					width: 160px;
+					height: 110px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 15px;
+					img {
+						width: 100%;
+						display: block;
+					}
+				}
+				> p {
+					line-height: 20px;
+					color: #333;
+					font-size: 12px;
+				}
+				> span {
+					font-size: 12px;
+					color: #ff6700;
+				}
+
+				&:before {
+					position: absolute;
+					left: 0;
+					top: 35px;
+					z-index: 2;
+					width: 1px;
+					height: 100px;
+					content: '';
+					background-color: #e0e0e0;
+				}
+				&:first-child::before {
+					display: none;
+				}
+			}
+		}
+	}
+	.logo {
+		width: 55px;
+		height: 55px;
+		background: #ff6700 url(../images/mi-logo.png) center;
+		margin-right: 188px;
+		margin-top: 22px;
+	}
+	.logo:hover {
+		cursor: pointer;
+		background-image: url(../images/mi-home.png);
+	}
+	.navTopT {
+		width: 596px;
+		line-height: 55px;
+		color: #333;
+		font-size: 16px;
+		display: flex;
+		justify-content: space-between;
+		li {
+			color: #333;
+			transition: all 0.2s;
+			box-sizing: border-box;
+			padding: 22px 0;
+			height: 99px;
+		}
+		li:hover {
+			color: #ff6700;
+			transition: all 0.2s;
+		}
+	}
+	.navTopT:hover {
+		cursor: pointer;
+	}
+
+	.search {
+		display: flex;
+		width: 294px;
+		height: 50px;
+		font-size: 16px;
+		margin-top: 22px;
+		input {
+			width: 238px;
+			height: 48px;
+			border: 1px solid #e0e0e0;
+			padding-left: 5px;
+		}
+		button {
+			background: #fff url(../images/search_10.jpg) no-repeat center;
+			display: block;
+			width: 50px;
+			height: 50px;
+			border: 1px solid #e0e0e0;
+		}
+	}
+}
+
+
+//公共底部样式
+footer {
+	height: 272px;
+	background: #fff;
+	.container {
+		.fooTop {
+			width: 100%;
+			height: 80px;
+			padding: 27px 10px 0;
+			box-sizing: border-box;
+			border-bottom: 1px solid #e0e0e0;
+			ul {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				color: #616161;
+				font-size: 16px;
+				text-align: center;
+				li {
+					width: 244px;
+					border-right: 1px solid #e0e0e0;
+					transition: all 0.3s;
+				}
+				li:hover {
+					color: #ff6700;
+					cursor: pointer;
+					transition: all 0.3s;
+				}
+			}
+		}
+		.fooBot {
+			height: 192px;
+			padding: 40px 0;
+			box-sizing: border-box;
+			dl {
+				width: 160px;
+				height: 112px;
+				float: left;
+				dt {
+					margin: -1px 0 26px;
+					font-size: 14px;
+					line-height: 1.25;
+					color: #424242;
+				}
+				dd {
+					margin: 10px 0 0;
+					font-size: 12px;
+					color: #757575;
+				}
+				dd:hover {
+					cursor: pointer;
+					color: #ff6700;
+				}
+			}
+			.contace {
+				width: 251px;
+				height: 112px;
+				border-left: 1px solid #e0e0e0;
+				text-align: center;
+				h3 {
+					margin: 0 0 5px;
+					font-size: 22px;
+					line-height: 1;
+					color: #ff6700;
+				}
+				p {
+					margin: 0 0 16px;
+					font-size: 12px;
+					color: #616161;
+				}
+				a {
+					display: inline-block;
+					width: 118px;
+					height: 28px;
+					font-size: 12px;
+					line-height: 28px;
+					border: 1px solid #ff6700;
+					background: #fff;
+					color: #ff6700;
+					transition: all 0.3s;
+				}
+				a:hover {
+					background: #ff6700;
+					color: #fff;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+}
+
+.bottom {
+	height: 190px;
+	background: #fafafa;
+	padding: 30px 0;
+	.container {
+		.botTop {
+			height: 109px;
+			.botLogo {
+				width: 55px;
+				height: 55px;
+				margin-right: 10px;
+			}
+			.botRight {
+				width: 1159px;
+				h5 {
+					height: 35px;
+					color: #757575;
+					font-size: 0;
+					a {
+						color: #757575;
+						font-size: 12px;
+					}
+					span {
+						padding: 0 3px;
+						font-size: 12px;
+					}
+					a:hover {
+						color: #ff6700;
+					}
+				}
+				p {
+					height: 72px;
+					line-height: 18px;
+					color: #b0b0b0;
+					font-size: 12px;
+				}
+			}
+		}
+
+		.bottom1 {
+			width: 1159px;
+			height: 28px;
+			padding-left: 67px;
+			margin-top: 4px;
+			img:hover {
+				cursor: pointer;
+			}
+		}
+
+		.bottom2 {
+			margin: 30px auto 0;
+			width: 267px;
+			height: 19px;
+			background: url(../images/bottom.png) no-repeat center 0;
+		}
+	}
+}

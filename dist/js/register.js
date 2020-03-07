@@ -1,0 +1,1 @@
+"use strict";$("#btn").on("click",function(e){e.preventDefault(),$.ajax({url:"/register",type:"POST",dataType:"json",data:$("#login").serialize(),success:function(e){1===e.code?window.location.href="./login.html":($(".alert").addClass("login-show tada animated").children().html(e.message),$("#password").val(""))},error:function(e){window.location.href="./register.html"}})});

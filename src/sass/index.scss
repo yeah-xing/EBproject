@@ -1,0 +1,384 @@
+
+.content {
+	height: 460px;
+	margin-bottom: 14px;
+	.container {
+		height: 100%;
+		position: relative;
+		.swiper-container {
+			width: 1226px;
+			height: 460px;
+			--swiper-theme-color: #aaa;
+			.swiper-slide:hover {
+				cursor: pointer;
+			}
+			.swiper-button-prev {
+				left: 244px;
+			}
+			.swiper-pagination {
+				left: 530px;
+			}
+			.swiper-button-prev:hover,
+			.swiper-button-next:hover {
+				--swiper-theme-color: #fff;
+			}
+		}
+		.conList{
+			position: absolute;
+			left: 234px;
+			top: 0;
+			background: #fff;
+			height: 458px;
+			z-index: 10;
+			border: 1px solid #e0e0e0;
+			border-left: none;
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+			a {
+				display: block;
+			}
+			ul {
+				float: left;
+				width: 248px;
+				height: 458px;
+				li {
+					float: left;
+					box-sizing: border-box;
+					width: 265px;
+					height: 76px;
+					padding: 18px 20px;
+					line-height: 40px;
+					color: #333;
+					transition: color 0.2s;
+					&:hover {
+						color: #ff6700;
+						cursor: pointer;
+					}
+					img {
+						width: 40px;
+						float: left;
+						margin-right: 12px;
+					}
+					span {
+						float: left;
+						line-height: 40px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		.conLeft {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 234px;
+			height: 100%;
+			background: rgba(105, 101, 101, 0.6);
+			padding: 20px 0;
+			box-sizing: border-box;
+			z-index: 10;
+			a {
+				display: block;
+			}
+			li {
+				font-size: 14px;
+				color: #fff;
+				height: 42px;
+				width: 204px;
+				padding-left: 30px;
+				line-height: 42px;
+				span {
+					float: right;
+					margin: 0 24px;
+				}
+			}
+			li:hover {
+				cursor: pointer;
+				background: #ff6700;
+			}
+		}
+		.conRight {
+			height: 100%;
+		}
+	}
+}
+
+.home {
+	height: 170px;
+	margin-bottom: 25px;
+	.container {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		.homLeft {
+			background: #5f5750;
+			width: 234px;
+			height: 100%;
+			padding: 3px;
+			box-sizing: border-box;
+			div {
+				width: 76px;
+				height: 82px;
+				padding: 49px 3px 0 3px;
+				box-sizing: border-box;
+				float: left;
+				font-size: 12px;
+				color: #c3c0bd;
+				text-align: center;
+				background: url(../images/jh.png) no-repeat 24px 24px;
+			}
+		}
+		.homRight {
+			width: 316px;
+			height: 170px;
+		}
+		.homRight:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.main {
+	height: 1300px;
+	background: #f5f5f5;
+	.container {
+		.sec {
+			height: 400px;
+			margin-bottom: 22px;
+			.secOne {
+				height: 60px;
+				position: relative;
+				h3 {
+					height: 60px;
+					font-size: 22px;
+					line-height: 60px;
+					color: #333;
+				}
+				.swiper-button-prev2,
+				.swiper-button-next2 {
+					--swiper-theme-color: #aaa;
+					--swiper-navigation-size: 10px; 
+					width: 36px;
+					height: 24px;
+					border: 1px solid #e0e0e0;
+					outline: none;
+				}
+				.swiper-button-prev2 {
+					left: 1142px;
+				}
+				.swiper-button-prev2:hover,
+				.swiper-button-next2:hover {
+					--swiper-theme-color: #ff6700;
+				}
+			}
+			.secTwo {
+				height: 340px;
+				display: flex;
+				justify-content: space-between;
+				.light {
+					border-top: 1px solid #e53935;
+					width: 234px;
+					background: #f1eded url(../images/light.jpg) no-repeat
+						100px 110px;
+					box-sizing: border-box;
+					padding-top: 60px;
+					text-align: center;
+					margin-right: 14px;
+					h4 {
+						font-size: 21px;
+						color: #ef3a3b;
+					}
+					h4:hover {
+						cursor: pointer;
+					}
+					p {
+						color: rgba(0, 0, 0, 0.54);
+						font-size: 15px;
+						margin-top: 120px;
+					}
+					.time {
+						margin: 28px 33px 0;
+						width: 168px;
+						display: flex;
+						justify-content: space-between;
+						div {
+							width: 46px;
+							height: 46px;
+							background: #605751;
+							color: #fff;
+							font-size: 24px;
+							line-height: 46px;
+						}
+						i {
+							width: 15px;
+							height: 46px;
+							display: block;
+							line-height: 46px;
+							color: #605751;
+							font-size: 28px;
+						}
+					}
+				}
+
+				.secBa {
+					display: flex;
+					justify-content: space-between;
+					width: 978px;
+				}
+				.secRight {
+					width: 234px;
+					height: 339px;
+					background: #fafafa;
+					text-align: center;
+					h5 {
+						font-size: 14px;
+						color: #000;
+						height: 14px;
+					}
+					p {
+						font-size: 12px;
+						height: 12px;
+						color: #adadad;
+						margin: 10px 0 20px;
+					}
+					.i {
+						font-size: 12px;
+						height: 12px;
+						i {
+							color: #ff6700;
+						}
+						s {
+							color: #adadad;
+						}
+					}
+				}
+				.secRight:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		.phone {
+			height: 814px;
+			margin-bottom: 36px;
+			.phoneTop {
+				height: 120px;
+				margin-bottom: 22px;
+			}
+			.phoneTop:hover {
+				cursor: pointer;
+			}
+			h2 {
+				height: 58px;
+				line-height: 58px;
+				font-size: 22px;
+				color: #333;
+				position: relative;
+				.more {
+					display: block;
+					width: 92px;
+					height: 58px;
+					background: #f5f5f5;
+					font-size: 16px;
+					position: absolute;
+					right: 0;
+					top: 0;
+					p {
+						float: left;
+						color: #424242;
+						line-height: 58px;
+						transition: all 0.5s;
+					}
+					.moreIcon {
+						float: right;
+						width: 20px;
+						height: 20px;
+						background: #b0b0b0;
+						color: #fff;
+						margin: 19px 0;
+						line-height: 20px;
+						text-align: center;
+						border-radius: 50%;
+						transition: all 0.5s;
+					}
+				}
+				.more:hover {
+					cursor: pointer;
+				}
+				.more:hover p {
+					color: #ff6700;
+					transition: all 0.5s;
+				}
+				.more:hover .more-icon {
+					background: #ff6700;
+					transition: all 0.5s;
+				}
+			}
+			.phoneBa {
+				height: 614px;
+				.phoneLeft {
+					width: 234px;
+					height: 614px;
+					position: relative;
+					top: 0;
+					left: 0;
+					transition: all 0.2s linear;
+				}
+				.phoneLeft:hover {
+					top: -2px;
+					box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+					transform: translate3d(0, -2px, 0);
+					cursor: pointer;
+				}
+
+				.phoneRight {
+					li {
+						float: left;
+						margin: 0 0 14px 14px;
+						width: 234px;
+						height: 300px;
+						background: #fff;
+						box-sizing: border-box;
+						padding: 20px 0;
+						position: relative;
+						transition: all 0.2s linear;
+						text-align: center;
+						img {
+							margin: 0 37px 18px 37px;
+						}
+						h5 {
+							font-size: 14px;
+							color: #000;
+							height: 14px;
+						}
+						p {
+							font-size: 12px;
+							height: 12px;
+							color: #adadad;
+							margin: 10px 0 18px;
+						}
+						.i {
+							font-size: 12px;
+							height: 12px;
+							i {
+								color: #ff6700;
+							}
+							s {
+								color: #adadad;
+							}
+						}
+					}
+					li:hover {
+						top: -2px;
+						box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+						transform: translate3d(0, -2px, 0);
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+html,
+body {
+	scroll-behavior: smooth;
+}
